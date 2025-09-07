@@ -86,3 +86,6 @@
   box-shadow: inset 0px 0 30px 0px rgba(75, 75, 75, 0.5), 10px 0 8px 0px rgba(46, 46, 46, 0.4);
 }
 
+#demoBookExample {
+    overflow: hidden;
+}
