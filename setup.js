@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             //maxShadowOpacity: 0.5, // Half shadow intensity
             showCover: true,
-            mobileScrollSupport: false // disable content scrolling on mobile devices
+            mobileScrollSupport: true // disable content scrolling on mobile devices
         }
     );
 
@@ -38,6 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
     pageFlip.loadFromHTML(document.querySelectorAll(".page"));
 
     document.querySelector(".page-total").innerText = pageFlip.getPageCount();
+    
     document.querySelector(
         ".page-orientation"
     ).innerText = pageFlip.getOrientation();
