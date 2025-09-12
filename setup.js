@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             //maxShadowOpacity: 0.5, // Half shadow intensity
             showCover: true,
-            mobileScrollSupport: true // disable content scrolling on mobile devices
+            mobileScrollSupport: false, // disable content scrolling on mobile devices,
         }
     );
 
