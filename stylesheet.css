@@ -89,3 +89,8 @@
 #demoBookExample {
     overflow: visible;
 }
+
+img {
+  user-select: none;
+  pointer-events: none;
+}
