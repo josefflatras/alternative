@@ -13,57 +13,27 @@
           <link rel="preload" as="image" href="imgs/9.png">
           <link rel="preload" as="image" href="imgs/10.png">
           <link rel="preload" as="image" href="imgs/11.png">
+          <link rel="preload" as="image" href="imgs/arrow.png">
+          <link rel="stylesheet" href="lib/photoswipe.css">
     </head>
-    <body style="overflow: hidden; position: fixed; width: 100%;">
-    
-<!--
-    <div style="width: 50px; height: 50%; right: 300px;">
-        <div id="book">
-            <div class="my-page">
-                <img src="imgs/1.png">
-            </div>
-            <div class="my-page">
-                <img src="imgs/2.png">
-            </div>
-            <div class="my-page">
-                <img src="imgs/3.png">
-            </div>
-            <div class="my-page">
-                <img src="imgs/4.png">
-            </div>
-            <div class="my-page">
-                <img src="imgs/5.png">
-            </div>
-            <div class="my-page">
-                <img src="imgs/6.png">
-            </div>
-            <div class="my-page">
-                <img src="imgs/7.png">
-            </div>
-            <div class="my-page">
-                <img src="imgs/8.png">
-            </div>
-            <div class="my-page">
-                <img src="imgs/9.png">
-            </div>
-            <div class="my-page">
-                <img src="imgs/10.png">
-            </div>
-        </div>
-    </div>
--->
-    <div>
-        <div class="container" style="max-width: 1000px; padding-top: 10vh; margin-right: auto; margin-left:auto; height:100%; width: 100%; overflow: hidden; position: relative; left: -10px;">
-            <div class="flip-book" id="demoBookExample">
+    <body>
+        <div id="container">
+            <div id="la"><img id ="lab" src="imgs/arrow.png"></div>
+            <div class="flip-book" id="book"><!--element is created via  this-->
                 <div class="page page-cover page-cover-top" data-density="hard">
                     <div class="page-content">
                         <!--<img class="page-image" style="background-image: url(imgs/1.png)"> src="imgs/1.png"> -->
-                        <img src="imgs/1.png" style="width: 100%; height: 100%; border: 1px solid">
+                        <img src="imgs/1.png" style="border: 1px solid">
                     </div>
                 </div>
                 <div class="page">
                     <div class="page-content">
-                        <img src="imgs/invitation.png" style="width: 100%; height: 100%;">
+                        <a href="./imgs/invitation.png"
+                            data-pswp-width="1200" 
+                            data-pswp-height="1600"
+                            style="position: absolute; top: 0; right: 0;"><img src="./imgs/max.png" style="height: 50px; width: 50px; filter: brightness(0) invert(1) ;">
+                        </a>
+                        <img src="./imgs/invitation.png" style="width: 100%; height: 100%;">
                         <!--
                         <h2 class="page-header">Page header 1</h2>
                         <div class="page-image" style="background-image: url(images/html/1.jpg)"></div>
@@ -75,76 +45,146 @@
                 <!-- PAGES .... -->
                 <div class="page">
                     <div class="page-content">
-                        <img src="imgs/2.png" style="width: 100%; height: 100%;">
+                        <a
+                            href="./imgs/2.png"
+                            data-pswp-width="1200" 
+                            data-pswp-height="1600"
+                            style="position: absolute; top: 0; right: 0;"><img src="./imgs/max.png" style="height: 50px; width: 50px;">
+                        </a>
+                        <img src="./imgs/2.png" style="width: 100%; height: 100%;">
                     </div>
                 </div>
                 <div class="page">
                     <div class="page-content">
-                        <img src="imgs/3.png" style="width: 100%; height: 100%;">
+                        <a href="./imgs/3.png"
+                            data-pswp-width="1200" 
+                            data-pswp-height="1600"
+                            style="position: absolute; top: 0; right: 0;"><img src="./imgs/max.png" style="height: 50px; width: 50px;">
+                        </a>
+                        <img src="./imgs/3.png" style="width: 100%; height: 100%;">
                     </div>
                 </div>
                 <div class="page">
                     <div class="page-content">
-                        <img src="imgs/4.png" style="width: 100%; height: 100%; ">
+                        <a href="./imgs/4.png"
+                            data-pswp-width="1200" 
+                            data-pswp-height="1600"
+                            style="position: absolute; top: 0; right: 0;"><img src="./imgs/max.png" style="height: 50px; width: 50px;">
+                        </a>
+                        <img src="./imgs/4.png" style="width: 100%; height: 100%;">
                     </div>
                 </div>
                 <div class="page">
                     <div class="page-content">
-                        <img src="imgs/5.png" style="width: 100%; height: 100%;">
+                        <a href="./imgs/5.png"
+                            data-pswp-width="1200" 
+                            data-pswp-height="1600"
+                            style="position: absolute; top: 0; right: 0;"><img src="./imgs/max.png" style="height: 50px; width: 50px;">
+                        </a>
+                        <img src="./imgs/5.png" style="width: 100%; height: 100%;">
                     </div>
                 </div>
                 <div class="page">
                     <div class="page-content">
-                        <img src="imgs/6.png" style="width: 100%; height: 100%;">
+                        <a href="./imgs/6.png"
+                            data-pswp-width="1200" 
+                            data-pswp-height="1600"
+                            style="position: absolute; top: 0; right: 0;"><img src="./imgs/max.png" style="height: 50px; width: 50px;">
+                        </a>
+                        <img src="./imgs/6.png" style="width: 100%; height: 100%;">
                     </div>
                 </div>
                 <div class="page">
                     <div class="page-content">
-                        <img src="imgs/7.png" style="width: 100%; height: 100%;">
+                        <a href="./imgs/7.png"
+                            data-pswp-width="1200" 
+                            data-pswp-height="1600"
+                            style="position: absolute; top: 0; right: 0;"><img src="./imgs/max.png" style="height: 50px; width: 50px;">
+                        </a>
+                        <img src="./imgs/7.png" style="width: 100%; height: 100%;">
                     </div>
                 </div>
                 <div class="page">
                     <div class="page-content">
-                        <img src="imgs/8.png" style="width: 100%; height: 100%;">
+                        <a href="./imgs/8.png"
+                            data-pswp-width="1200" 
+                            data-pswp-height="1600"
+                            style="position: absolute; top: 0; right: 0;"><img src="./imgs/max.png" style="height: 50px; width: 50px;">
+                        </a>
+                        <img src="./imgs/8.png" style="width: 100%; height: 100%;">
                     </div>
                 </div>
                 <div class="page">
                     <div class="page-content">
-                        <img src="imgs/9.png" style="width: 100%; height: 100%;">
+                        <a href="./imgs/9.png"
+                            data-pswp-width="1200" 
+                            data-pswp-height="1600"
+                            style="position: absolute; top: 0; right: 0;"><img src="./imgs/max.png" style="height: 50px; width: 50px;">
+                        </a>
+                        <img src="./imgs/9.png" style="width: 100%; height: 100%;">
                     </div>
                 </div>
                 <div class="page">
                     <div class="page-content">
-                        <img src="imgs/10.png" style="width: 100%; height: 100%;">
+                        <a href="./imgs/10.png"
+                            data-pswp-width="1200" 
+                            data-pswp-height="1600"
+                            style="position: absolute; top: 0; right: 0;"><img src="./imgs/max.png" style="height: 50px; width: 50px;">
+                        </a>
+                        <img src="./imgs/10.png" style="width: 100%; height: 100%;">
                     </div>
                 </div>
                 <div class="page">
                     <div class="page-content">
-                        <img src="imgs/11.png" style="width: 100%; height: 100%;">
+                        <a href="./imgs/11.png"
+                            data-pswp-width="1200" 
+                            data-pswp-height="1600"
+                            style="position: absolute; top: 0; right: 0;"><img src="./imgs/max.png" style="height: 50px; width: 50px;">
+                        </a>
+                        <img src="./imgs/11.png" style="width: 100%; height: 100%;">
                     </div>
                 </div>
                 <div class="page">
                     <div class="page-content">
-                        <div></div>
+                        <a href="./imgs/12.png"
+                            data-pswp-width="1200" 
+                            data-pswp-height="1600"
+                            style="position: absolute; top: 0; right: 0;"><img src="./imgs/max.png" style="height: 50px; width: 50px;">
+                        </a>
+                        <img src="./imgs/12.png" style="width: 100%; height: 100%;">
+                    </div>
+                </div>
+                <div class="page">
+                    <div class="page-content">
+                        <a href="./imgs/application.png"
+                            data-pswp-width="1200" 
+                            data-pswp-height="1600"
+                            style="position: absolute; top: 0; right: 0;"><img src="./imgs/max.png" style="height: 50px; width: 50px;">
+                        </a>
+                        <img src="./imgs/application.png" style="width: 100%; height: 100%;">
                     </div>
                 </div>
             </div>
-
-            <div class="container buttonmenu" style="margin-right: auto; margin-left:auto; padding-right: 15px; padding-left: 15px; width: 100%;">
-                <button type="button" class="btn-prev">Previous page</button>
-                [<span class="page-current">1</span> of <span class="page-total">-</span>]
-                <button type="button" class="btn-next">Next page</button>
-            </div>
-
-            <div style="display:none;">
-                State: <i class="page-state">read</i>, orientation: <i class="page-orientation">landscape</i>
-            </div>
+            <div id="ra"><img id ="rab" src="imgs/arrow.png"></div>
         </div>
-    </div>
+        <div style="display: none;" class="page-current">1</div>
+        <!--
+        <div class="container buttonmenu" style="margin-right: auto; margin-left:auto; padding-right: 15px; padding-left: 15px; width: 100%;">
+            <button type="button" class="btn-prev">Previous page</button>
+            [<span class="page-current">1</span> of <span class="page-total">-</span>]
+            <button type="button" class="btn-next">Next page</button>
+        </div>
+
+        <div style="display:none;">
+            State: <i class="page-state">read</i>, orientation: <i class="page-orientation">landscape</i>
+        </div>
+        -->
+        </div>
 
 
     
     <script type="module" src="lib/page-flip.module.js"></script>
     <script type="module" src="setup.js"></script>
+    <script type="module" src="lib/photoswipe-lightbox.esm.js"></script>
     </body>
 </html>

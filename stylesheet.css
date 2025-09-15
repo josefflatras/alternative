@@ -88,11 +88,67 @@
   box-shadow: inset 0px 0 30px 0px rgba(75, 75, 75, 0.5), 10px 0 8px 0px rgba(46, 46, 46, 0.4);
 }
 
-#demoBookExample {
-    overflow: visible;
-}
-
-img {
+.pgim {
   user-select: none;
   pointer-events: none;
+}
+
+#book {
+  /*padding: 10vh 0 10vh 0;*/
+  overflow:visible;
+}
+
+#container {
+  /*max-width: 1000px;*/
+  /*padding-top: 10vh;*/
+  overflow: show;
+  position: inherit;
+  height: fit-content;
+  width: 100%;
+  /*left: -10px;*/
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #22814d;
+}
+
+#ra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right:auto;
+}
+
+#la {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left:auto;
+}
+
+#lab {
+  height: 150px;
+  width: 50px;
+  transform: perspective(600px) rotateY(180deg);
+  display: none;
+}
+
+#rab {
+  height: 150px;
+  width: 50px;
+  display: block;
 }
