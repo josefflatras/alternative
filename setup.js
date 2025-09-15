@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById("lab").style.display = "block";
             document.getElementById("rab").style.display = "block";
         }
-        if (document.querySelector(".page-current").innerText >= 11) {
+        if (document.querySelector(".page-current").innerText >= 13) {
             document.getElementById("rab").style.display = "none";
         }
     });
